@@ -1,0 +1,14 @@
+{
+    "seed": 42,
+    "model_name": "EleutherAI/pythia-2.8b-v0",
+    "learning_rate": 2e-5,
+    "num_train_epochs": 3,
+    "batch_size": 1,
+    "output_dir": "/shared/share_mala/leon/pythia-2.8b-sft",
+    "warmup_ratio": 0.03,
+    "gradient_accumulation_steps": 16,
+    "weight_decay": 0.01,
+    "max_seq_length": 512,
+    "dataset_name": "tatsu-lab/alpaca_farm"
+}
+

@@ -1,0 +1,775 @@
+[2023-09-24 14:39:57,797] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-24 14:40:03,374] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-24 14:40:13,757] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-24 14:40:14,593] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-24 14:40:14,714] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-24 14:40:14,881] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-24 14:40:14,893] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-24 14:40:14,916] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-24 14:40:14,931] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-24 14:40:14,937] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2023-09-24 14:40:17,469] [WARNING] [comm.py:152:init_deepspeed_backend] NCCL backend in DeepSpeed not yet implemented
+[2023-09-24 14:40:17,469] [INFO] [comm.py:616:init_distributed] cdb=None
+[2023-09-24 14:40:18,762] [WARNING] [comm.py:152:init_deepspeed_backend] NCCL backend in DeepSpeed not yet implemented
+[2023-09-24 14:40:18,762] [INFO] [comm.py:616:init_distributed] cdb=None
+[2023-09-24 14:40:18,762] [INFO] [comm.py:643:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2023-09-24 14:40:18,996] [WARNING] [comm.py:152:init_deepspeed_backend] NCCL backend in DeepSpeed not yet implemented
+[2023-09-24 14:40:18,996] [INFO] [comm.py:616:init_distributed] cdb=None
+[2023-09-24 14:40:19,069] [WARNING] [comm.py:152:init_deepspeed_backend] NCCL backend in DeepSpeed not yet implemented
+[2023-09-24 14:40:19,069] [INFO] [comm.py:616:init_distributed] cdb=None
+[2023-09-24 14:40:19,178] [WARNING] [comm.py:152:init_deepspeed_backend] NCCL backend in DeepSpeed not yet implemented
+[2023-09-24 14:40:19,178] [INFO] [comm.py:616:init_distributed] cdb=None
+[2023-09-24 14:40:19,191] [WARNING] [comm.py:152:init_deepspeed_backend] NCCL backend in DeepSpeed not yet implemented
+[2023-09-24 14:40:19,191] [INFO] [comm.py:616:init_distributed] cdb=None
+[2023-09-24 14:40:19,193] [WARNING] [comm.py:152:init_deepspeed_backend] NCCL backend in DeepSpeed not yet implemented
+[2023-09-24 14:40:19,193] [INFO] [comm.py:616:init_distributed] cdb=None
+[2023-09-24 14:40:19,194] [WARNING] [comm.py:152:init_deepspeed_backend] NCCL backend in DeepSpeed not yet implemented
+[2023-09-24 14:40:19,194] [INFO] [comm.py:616:init_distributed] cdb=None
+torch seed 542
+cuda seed 542
+wandb_dir /shared/share_mala/leon/Logs/wandb_logs/reward-enn/hh_long/anthropic_hh-ref_size30-enn_dim64-num_ref_train100-lr1e-05-weight_decay0.01-enn_lr0.0001-enn_decay0.95-reward_lr0.0001-reward_decay0.95-gc1-train_batch_size4
+torch seed 42
+cuda seed 42
+torch seed 642
+cuda seed 642
+torch seed 342
+cuda seed 342
+torch seed 442
+cuda seed 442
+torch seed 742
+cuda seed 742
+torch seed 142
+cuda seed 142
+torch seed 242
+cuda seed 242
+training dataset size: 2544
+eval dataset size: 8
+joint eval dataset size: 256
+Total steps:  76320
+Warmup steps:  2289
+[2023-09-24 14:40:55,969] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.10.0, git-hash=unknown, git-branch=unknown
+[2023-09-24 14:40:58,569] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2023-09-24 14:40:58,570] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the client Optimizer
+[2023-09-24 14:40:58,570] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2023-09-24 14:40:58,575] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2023-09-24 14:40:58,575] [INFO] [utils.py:54:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
+[2023-09-24 14:40:58,575] [INFO] [logging.py:96:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 2 optimizer
+[2023-09-24 14:40:58,575] [INFO] [stage_1_and_2.py:133:__init__] Reduce bucket size 500,000,000
+[2023-09-24 14:40:58,575] [INFO] [stage_1_and_2.py:134:__init__] Allgather bucket size 500,000,000
+[2023-09-24 14:40:58,575] [INFO] [stage_1_and_2.py:135:__init__] CPU Offload: False
+[2023-09-24 14:40:58,575] [INFO] [stage_1_and_2.py:136:__init__] Round robin gradient partitioning: False
+Rank: 3 partition count [8, 8, 8] and sizes[(428310000, False), (402, False), (26612, False)] 
+Rank: 4 partition count [8, 8, 8] and sizes[(428310000, False), (402, False), (26612, False)] 
+Rank: 0 partition count [8, 8, 8] and sizes[(428310000, False), (402, False), (26612, False)] 
+Rank: 1 partition count [8, 8, 8] and sizes[(428310000, False), (402, False), (26612, False)] 
+Rank: 7 partition count [8, 8, 8] and sizes[(428310000, False), (402, False), (26612, False)] 
+Rank: 2 partition count [8, 8, 8] and sizes[(428310000, False), (402, False), (26612, False)] 
+Rank: 6 partition count [8, 8, 8] and sizes[(428310000, False), (402, False), (26612, False)] 
+Rank: 5 partition count [8, 8, 8] and sizes[(428310000, False), (402, False), (26612, False)] 
+[2023-09-24 14:41:11,634] [INFO] [utils.py:785:see_memory_usage] Before initializing optimizer states
+[2023-09-24 14:41:11,634] [INFO] [utils.py:786:see_memory_usage] MA 8.0 GB         Max_MA 8.0 GB         CA 8.0 GB         Max_CA 8 GB 
+[2023-09-24 14:41:11,635] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 46.2 GB, percent = 4.6%
+[2023-09-24 14:41:11,743] [INFO] [utils.py:785:see_memory_usage] After initializing optimizer states
+[2023-09-24 14:41:11,744] [INFO] [utils.py:786:see_memory_usage] MA 11.19 GB         Max_MA 15.98 GB         CA 15.98 GB         Max_CA 16 GB 
+[2023-09-24 14:41:11,745] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 46.2 GB, percent = 4.6%
+[2023-09-24 14:41:11,746] [INFO] [stage_1_and_2.py:493:__init__] optimizer state initialized
+[2023-09-24 14:41:11,870] [INFO] [utils.py:785:see_memory_usage] After initializing ZeRO optimizer
+[2023-09-24 14:41:11,871] [INFO] [utils.py:786:see_memory_usage] MA 11.19 GB         Max_MA 11.19 GB         CA 15.98 GB         Max_CA 16 GB 
+[2023-09-24 14:41:11,871] [INFO] [utils.py:793:see_memory_usage] CPU Virtual Memory:  used = 46.2 GB, percent = 4.6%
+[2023-09-24 14:41:11,874] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = AdamW
+[2023-09-24 14:41:11,874] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2023-09-24 14:41:11,875] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2023-09-24 14:41:11,875] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[1.0000000000000002e-06, 1e-05, 1e-05], mom=[(0.9, 0.999), (0.9, 0.999), (0.9, 0.999)]
+[2023-09-24 14:41:11,875] [INFO] [config.py:960:print] DeepSpeedEngine configuration:
+[2023-09-24 14:41:11,876] [INFO] [config.py:964:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2023-09-24 14:41:11,877] [INFO] [config.py:964:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2023-09-24 14:41:11,877] [INFO] [config.py:964:print]   amp_enabled .................. False
+[2023-09-24 14:41:11,878] [INFO] [config.py:964:print]   amp_params ................... False
+[2023-09-24 14:41:11,878] [INFO] [config.py:964:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2023-09-24 14:41:11,879] [INFO] [config.py:964:print]   bfloat16_enabled ............. True
+[2023-09-24 14:41:11,879] [INFO] [config.py:964:print]   checkpoint_parallel_write_pipeline  False
+[2023-09-24 14:41:11,880] [INFO] [config.py:964:print]   checkpoint_tag_validation_enabled  True
+[2023-09-24 14:41:11,880] [INFO] [config.py:964:print]   checkpoint_tag_validation_fail  False
+[2023-09-24 14:41:11,880] [INFO] [config.py:964:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7f4787551c10>
+[2023-09-24 14:41:11,880] [INFO] [config.py:964:print]   communication_data_type ...... None
+[2023-09-24 14:41:11,880] [INFO] [config.py:964:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2023-09-24 14:41:11,881] [INFO] [config.py:964:print]   curriculum_enabled_legacy .... False
+[2023-09-24 14:41:11,881] [INFO] [config.py:964:print]   curriculum_params_legacy ..... False
+[2023-09-24 14:41:11,881] [INFO] [config.py:964:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2023-09-24 14:41:11,882] [INFO] [config.py:964:print]   data_efficiency_enabled ...... False
+[2023-09-24 14:41:11,882] [INFO] [config.py:964:print]   dataloader_drop_last ......... False
+[2023-09-24 14:41:11,882] [INFO] [config.py:964:print]   disable_allgather ............ False
+[2023-09-24 14:41:11,883] [INFO] [config.py:964:print]   dump_state ................... False
+[2023-09-24 14:41:11,883] [INFO] [config.py:964:print]   dynamic_loss_scale_args ...... None
+[2023-09-24 14:41:11,884] [INFO] [config.py:964:print]   eigenvalue_enabled ........... False
+[2023-09-24 14:41:11,884] [INFO] [config.py:964:print]   eigenvalue_gas_boundary_resolution  1
+[2023-09-24 14:41:11,885] [INFO] [config.py:964:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2023-09-24 14:41:11,885] [INFO] [config.py:964:print]   eigenvalue_layer_num ......... 0
+[2023-09-24 14:41:11,886] [INFO] [config.py:964:print]   eigenvalue_max_iter .......... 100
+[2023-09-24 14:41:11,886] [INFO] [config.py:964:print]   eigenvalue_stability ......... 1e-06
+[2023-09-24 14:41:11,887] [INFO] [config.py:964:print]   eigenvalue_tol ............... 0.01
+[2023-09-24 14:41:11,887] [INFO] [config.py:964:print]   eigenvalue_verbose ........... False
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   elasticity_enabled ........... False
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   fp16_auto_cast ............... None
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   fp16_enabled ................. False
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   fp16_master_weights_and_gradients  False
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   global_rank .................. 0
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   grad_accum_dtype ............. None
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   gradient_accumulation_steps .. 1
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   gradient_clipping ............ 0.0
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   gradient_predivide_factor .... 1.0
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   initial_dynamic_scale ........ 1
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   load_universal_checkpoint .... False
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   loss_scale ................... 1.0
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   memory_breakdown ............. False
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   mics_hierarchial_params_gather  False
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   mics_shard_size .............. -1
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   optimizer_legacy_fusion ...... False
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   optimizer_name ............... None
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   optimizer_params ............. None
+[2023-09-24 14:41:11,888] [INFO] [config.py:964:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2023-09-24 14:41:11,889] [INFO] [config.py:964:print]   pld_enabled .................. False
+[2023-09-24 14:41:11,890] [INFO] [config.py:964:print]   pld_params ................... False
+[2023-09-24 14:41:11,891] [INFO] [config.py:964:print]   prescale_gradients ........... False
+[2023-09-24 14:41:11,891] [INFO] [config.py:964:print]   scheduler_name ............... None
+[2023-09-24 14:41:11,891] [INFO] [config.py:964:print]   scheduler_params ............. None
+[2023-09-24 14:41:11,892] [INFO] [config.py:964:print]   sparse_attention ............. None
+[2023-09-24 14:41:11,892] [INFO] [config.py:964:print]   sparse_gradients_enabled ..... False
+[2023-09-24 14:41:11,893] [INFO] [config.py:964:print]   steps_per_print .............. inf
+[2023-09-24 14:41:11,894] [INFO] [config.py:964:print]   train_batch_size ............. 8
+[2023-09-24 14:41:11,896] [INFO] [config.py:964:print]   train_micro_batch_size_per_gpu  1
+[2023-09-24 14:41:11,896] [INFO] [config.py:964:print]   use_node_local_storage ....... False
+[2023-09-24 14:41:11,896] [INFO] [config.py:964:print]   wall_clock_breakdown ......... False
+[2023-09-24 14:41:11,896] [INFO] [config.py:964:print]   world_size ................... 8
+[2023-09-24 14:41:11,897] [INFO] [config.py:964:print]   zero_allow_untested_optimizer  True
+[2023-09-24 14:41:11,898] [INFO] [config.py:964:print]   zero_config .................. stage=2 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100,000,000, max_in_cpu=1,000,000,000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=False, pipeline=False, pipeline_read=False, pipeline_write=False, fast_init=False) sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True
+[2023-09-24 14:41:11,899] [INFO] [config.py:964:print]   zero_enabled ................. True
+[2023-09-24 14:41:11,900] [INFO] [config.py:964:print]   zero_force_ds_cpu_optimizer .. True
+[2023-09-24 14:41:11,901] [INFO] [config.py:964:print]   zero_optimization_stage ...... 2
+[2023-09-24 14:41:11,901] [INFO] [config.py:950:print_user_config]   json = {
+    "train_batch_size": 8, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "gradient_accumulation_steps": 1, 
+    "zero_optimization": {
+        "stage": 2, 
+        "offload_optimizer": {
+            "device": "none", 
+            "nvme_path": null
+        }, 
+        "offload_param": {
+            "device": "none", 
+            "nvme_path": null
+        }, 
+        "stage3_gather_16bit_weights_on_model_save": false
+    }, 
+    "steps_per_print": inf, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "fp16": {
+        "enabled": false
+    }, 
+    "zero_allow_untested_optimizer": true
+}
+--------------------------------------start training--------------------------------------
+epoch 0
+eval before training
+eval_z_samples_size: 100
+eval_loss: 0.8262, accuracy: 0.5527
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5137, prediction_2_rate: 0.4863
+true_1_rate: 0.5654, true_2_rate: 0.5397
+log joint likelihood: tensor(-576.7500000000) joint log likelihood: tensor(-6244.6250000000)
+r_win_average: -1.4146, r_win_min: -4.0938, r_win_max: 4.5625, r_win_std: 1.2978
+r_lose_average: -2.5661, r_lose_min: -5.5938, r_lose_max: 1.6953, r_lose_std: 1.0444
+eta_win_average: 0.8597, eta_win_min: -0.8867, eta_win_max: 2.4062, eta_win_std: 0.3649
+eta_lose_average: 0.8172, eta_lose_min: -1.1953, eta_lose_max: 1.7578, eta_lose_std: 0.3572
+p_win_average: 0.2863, p_win_min: -0.7109, p_win_max: 1.4922, p_win_std: 0.2890
+p_lose_average: 0.2635, p_lose_min: -0.9336, p_lose_max: 1.1250, p_lose_std: 0.2894
+
+------------------------------------------------------------------------------------------
+epoch 1 step 30 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.7886, accuracy: 0.5684
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.4629, prediction_2_rate: 0.5371
+true_1_rate: 0.5308, true_2_rate: 0.6071
+log joint likelihood: tensor(-559.3085937500) joint log likelihood: tensor(-5428.7500000000)
+r_win_average: 0.4448, r_win_min: -2.5625, r_win_max: 5.6875, r_win_std: 1.3279
+r_lose_average: -0.8386, r_lose_min: -4.9688, r_lose_max: 2.6875, r_lose_std: 1.2145
+eta_win_average: 1.5119, eta_win_min: 0.2676, eta_win_max: 2.9375, eta_win_std: 0.3752
+eta_lose_average: 1.4916, eta_lose_min: -0.1787, eta_lose_max: 2.5469, eta_lose_std: 0.3899
+p_win_average: -0.3265, p_win_min: -1.6953, p_win_max: 1.6719, p_win_std: 0.4779
+p_lose_average: -0.4448, p_lose_min: -1.7266, p_lose_max: 0.8125, p_lose_std: 0.4369
+
+------------------------------------------------------------------------------------------
+epoch 1 step 60 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.6772, accuracy: 0.6211
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.4922, prediction_2_rate: 0.5078
+true_1_rate: 0.6115, true_2_rate: 0.6310
+log joint likelihood: tensor(-635.9492187500) joint log likelihood: tensor(-3948.4375000000)
+r_win_average: 0.6871, r_win_min: -2.5156, r_win_max: 3.5781, r_win_std: 1.0366
+r_lose_average: -0.3480, r_lose_min: -4.7188, r_lose_max: 2.5938, r_lose_std: 1.0621
+eta_win_average: -0.7700, eta_win_min: -1.5078, eta_win_max: 0.4629, eta_win_std: 0.2477
+eta_lose_average: -0.8329, eta_lose_min: -1.7422, eta_lose_max: 0.3574, eta_lose_std: 0.2295
+p_win_average: 1.1445, p_win_min: 0.0498, p_win_max: 2.0938, p_win_std: 0.2811
+p_lose_average: 1.0866, p_lose_min: -0.3242, p_lose_max: 1.9609, p_lose_std: 0.2917
+
+------------------------------------------------------------------------------------------
+epoch 1 step 90 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.6138, accuracy: 0.6641
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5039, prediction_2_rate: 0.4961
+true_1_rate: 0.6654, true_2_rate: 0.6627
+log joint likelihood: tensor(-711.6796875000) joint log likelihood: tensor(-2999.8281250000)
+r_win_average: -0.3205, r_win_min: -2.9375, r_win_max: 3.1250, r_win_std: 0.9811
+r_lose_average: -1.2402, r_lose_min: -4.0000, r_lose_max: 1.3203, r_lose_std: 0.9684
+eta_win_average: -0.3071, eta_win_min: -0.9219, eta_win_max: 0.4414, eta_win_std: 0.1525
+eta_lose_average: -0.3197, eta_lose_min: -1.1562, eta_lose_max: 0.2070, eta_lose_std: 0.1511
+p_win_average: -0.7360, p_win_min: -1.4688, p_win_max: 0.2119, p_win_std: 0.2019
+p_lose_average: -0.7479, p_lose_min: -1.2422, p_lose_max: -0.0161, p_lose_std: 0.1736
+
+------------------------------------------------------------------------------------------
+epoch 1 step 120 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.6021, accuracy: 0.6621
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.4902, prediction_2_rate: 0.5098
+true_1_rate: 0.6500, true_2_rate: 0.6746
+log joint likelihood: tensor(-812.1015625000) joint log likelihood: tensor(-2455.6406250000)
+r_win_average: 1.5014, r_win_min: -0.8633, r_win_max: 4.6250, r_win_std: 0.9060
+r_lose_average: 0.6629, r_lose_min: -1.6562, r_lose_max: 2.9219, r_lose_std: 0.8942
+eta_win_average: 0.0092, eta_win_min: -0.6055, eta_win_max: 0.6445, eta_win_std: 0.1416
+eta_lose_average: 0.0300, eta_lose_min: -0.6992, eta_lose_max: 0.7539, eta_lose_std: 0.1416
+p_win_average: 0.6121, p_win_min: 0.2129, p_win_max: 1.2969, p_win_std: 0.1242
+p_lose_average: 0.6014, p_lose_min: 0.2305, p_lose_max: 1.0312, p_lose_std: 0.0979
+
+------------------------------------------------------------------------------------------
+epoch 1 step 150 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.5742, accuracy: 0.6758
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5039, prediction_2_rate: 0.4961
+true_1_rate: 0.6769, true_2_rate: 0.6746
+log joint likelihood: tensor(-893.9140625000) joint log likelihood: tensor(-2099.1562500000)
+r_win_average: 0.4887, r_win_min: -1.7188, r_win_max: 3.7969, r_win_std: 0.8390
+r_lose_average: -0.2847, r_lose_min: -2.7188, r_lose_max: 2.1562, r_lose_std: 0.8294
+eta_win_average: -0.2403, eta_win_min: -0.8672, eta_win_max: 0.2441, eta_win_std: 0.0947
+eta_lose_average: -0.2307, eta_lose_min: -0.6719, eta_lose_max: 0.0342, eta_lose_std: 0.0891
+p_win_average: 0.7768, p_win_min: 0.1816, p_win_max: 1.2031, p_win_std: 0.0853
+p_lose_average: 0.7588, p_lose_min: 0.3105, p_lose_max: 1.2031, p_lose_std: 0.0764
+
+------------------------------------------------------------------------------------------
+epoch 1 step 180 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.5830, accuracy: 0.6777
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.4941, prediction_2_rate: 0.5059
+true_1_rate: 0.6692, true_2_rate: 0.6865
+log joint likelihood: tensor(-871.7773437500) joint log likelihood: tensor(-2071.3125000000)
+r_win_average: 0.4650, r_win_min: -3.0938, r_win_max: 3.4531, r_win_std: 1.0660
+r_lose_average: -0.5148, r_lose_min: -4.8438, r_lose_max: 2.1094, r_lose_std: 1.1866
+eta_win_average: -0.7734, eta_win_min: -1.1797, eta_win_max: -0.3965, eta_win_std: 0.0906
+eta_lose_average: -0.7649, eta_lose_min: -1.1172, eta_lose_max: -0.5156, eta_lose_std: 0.0974
+p_win_average: 0.2897, p_win_min: -0.3164, p_win_max: 0.7969, p_win_std: 0.1412
+p_lose_average: 0.2588, p_lose_min: -0.2246, p_lose_max: 0.6406, p_lose_std: 0.1323
+
+------------------------------------------------------------------------------------------
+epoch 1 step 210 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.5642, accuracy: 0.6836
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5000, prediction_2_rate: 0.5000
+true_1_rate: 0.6808, true_2_rate: 0.6865
+log joint likelihood: tensor(-957.2617187500) joint log likelihood: tensor(-1842.1406250000)
+r_win_average: 0.1970, r_win_min: -2.4219, r_win_max: 2.9375, r_win_std: 0.9557
+r_lose_average: -0.6995, r_lose_min: -3.4688, r_lose_max: 1.8984, r_lose_std: 0.9946
+eta_win_average: -0.3509, eta_win_min: -0.7852, eta_win_max: -0.1582, eta_win_std: 0.0700
+eta_lose_average: -0.3383, eta_lose_min: -0.7148, eta_lose_max: -0.1484, eta_lose_std: 0.0690
+p_win_average: 0.2994, p_win_min: 0.0405, p_win_max: 0.4863, p_win_std: 0.0634
+p_lose_average: 0.3049, p_lose_min: 0.0003, p_lose_max: 0.6484, p_lose_std: 0.0640
+
+------------------------------------------------------------------------------------------
+epoch 1 step 240 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.5588, accuracy: 0.7012
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5176, prediction_2_rate: 0.4824
+true_1_rate: 0.7154, true_2_rate: 0.6865
+log joint likelihood: tensor(-988.8398437500) joint log likelihood: tensor(-1714.5078125000)
+r_win_average: -0.3554, r_win_min: -3.2812, r_win_max: 3.5469, r_win_std: 1.0347
+r_lose_average: -1.2968, r_lose_min: -4.3750, r_lose_max: 1.4531, r_lose_std: 1.0307
+eta_win_average: -0.6566, eta_win_min: -0.8555, eta_win_max: -0.1885, eta_win_std: 0.0802
+eta_lose_average: -0.6740, eta_lose_min: -0.8594, eta_lose_max: -0.3652, eta_lose_std: 0.0687
+p_win_average: 0.4853, p_win_min: 0.2246, p_win_max: 0.9219, p_win_std: 0.0665
+p_lose_average: 0.5016, p_lose_min: 0.3066, p_lose_max: 0.8477, p_lose_std: 0.0655
+
+------------------------------------------------------------------------------------------
+epoch 1 step 270 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.5569, accuracy: 0.6875
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5156, prediction_2_rate: 0.4844
+true_1_rate: 0.7000, true_2_rate: 0.6746
+log joint likelihood: tensor(-970.6054687500) joint log likelihood: tensor(-1750.7187500000)
+r_win_average: 0.3811, r_win_min: -4.1875, r_win_max: 3.7344, r_win_std: 1.1366
+r_lose_average: -0.7273, r_lose_min: -5.7500, r_lose_max: 2.1094, r_lose_std: 1.3533
+eta_win_average: -0.1071, eta_win_min: -0.3867, eta_win_max: 0.1914, eta_win_std: 0.0669
+eta_lose_average: -0.1103, eta_lose_min: -0.5156, eta_lose_max: 0.1582, eta_lose_std: 0.0642
+p_win_average: 0.3326, p_win_min: -0.0201, p_win_max: 0.6602, p_win_std: 0.0732
+p_lose_average: 0.3276, p_lose_min: 0.1543, p_lose_max: 0.7617, p_lose_std: 0.0721
+
+------------------------------------------------------------------------------------------
+epoch 1 step 300 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.5632, accuracy: 0.6934
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.4941, prediction_2_rate: 0.5059
+true_1_rate: 0.6846, true_2_rate: 0.7024
+log joint likelihood: tensor(-1096.2695312500) joint log likelihood: tensor(-1616.6914062500)
+r_win_average: 0.9559, r_win_min: -2.1875, r_win_max: 4.2500, r_win_std: 0.8518
+r_lose_average: 0.1038, r_lose_min: -2.9688, r_lose_max: 2.3281, r_lose_std: 1.0074
+eta_win_average: 1.3799, eta_win_min: 0.9727, eta_win_max: 1.6016, eta_win_std: 0.0809
+eta_lose_average: 1.3874, eta_lose_min: 1.0234, eta_lose_max: 1.8438, eta_lose_std: 0.0856
+p_win_average: -1.2159, p_win_min: -1.4297, p_win_max: -0.8750, p_win_std: 0.0771
+p_lose_average: -1.2216, p_lose_min: -1.4688, p_lose_max: -0.7969, p_lose_std: 0.0737
+
+------------------------------------------------------------------------------------------
+epoch 1 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.5513, accuracy: 0.7129
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5215, prediction_2_rate: 0.4785
+true_1_rate: 0.7308, true_2_rate: 0.6944
+log joint likelihood: tensor(-1077.0742187500) joint log likelihood: tensor(-1582.9492187500)
+r_win_average: 0.2993, r_win_min: -4.6250, r_win_max: 3.5469, r_win_std: 1.1956
+r_lose_average: -0.7957, r_lose_min: -4.6562, r_lose_max: 1.8750, r_lose_std: 1.2860
+eta_win_average: -0.3146, eta_win_min: -0.5508, eta_win_max: -0.1348, eta_win_std: 0.0586
+eta_lose_average: -0.2951, eta_lose_min: -0.4922, eta_lose_max: -0.1406, eta_lose_std: 0.0541
+p_win_average: 0.1642, p_win_min: -0.0986, p_win_max: 0.7070, p_win_std: 0.0743
+p_lose_average: 0.1552, p_lose_min: -0.1079, p_lose_max: 0.3691, p_lose_std: 0.0657
+
+------------------------------------------------------------------------------------------
+epoch 1
+eval before training
+eval_z_samples_size: 100
+eval_loss: 0.5476, accuracy: 0.7129
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5098, prediction_2_rate: 0.4902
+true_1_rate: 0.7192, true_2_rate: 0.7063
+log joint likelihood: tensor(-1070.8085937500) joint log likelihood: tensor(-1579.9179687500)
+r_win_average: -0.1115, r_win_min: -5.1250, r_win_max: 3.4375, r_win_std: 1.2139
+r_lose_average: -1.2298, r_lose_min: -5.1875, r_lose_max: 1.8750, r_lose_std: 1.3100
+eta_win_average: -0.5886, eta_win_min: -0.7227, eta_win_max: -0.3770, eta_win_std: 0.0438
+eta_lose_average: -0.5916, eta_lose_min: -0.7500, eta_lose_max: -0.4531, eta_lose_std: 0.0359
+p_win_average: 0.0267, p_win_min: -0.2256, p_win_max: 0.2471, p_win_std: 0.0635
+p_lose_average: 0.0184, p_lose_min: -0.1953, p_lose_max: 0.1719, p_lose_std: 0.0574
+
+------------------------------------------------------------------------------------------
+epoch 2 step 30 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.6555, accuracy: 0.6934
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5176, prediction_2_rate: 0.4824
+true_1_rate: 0.7077, true_2_rate: 0.6786
+log joint likelihood: tensor(-688.0634765625) joint log likelihood: tensor(-2791.9589843750)
+r_win_average: 3.1144, r_win_min: -2.8906, r_win_max: 12.3750, r_win_std: 2.0427
+r_lose_average: 1.0937, r_lose_min: -6.2500, r_lose_max: 7.0625, r_lose_std: 2.0572
+eta_win_average: 0.9039, eta_win_min: 0.1777, eta_win_max: 1.4688, eta_win_std: 0.1150
+eta_lose_average: 0.9071, eta_lose_min: 0.4375, eta_lose_max: 1.1484, eta_lose_std: 0.0972
+p_win_average: -0.6804, p_win_min: -1.5000, p_win_max: -0.1001, p_win_std: 0.1924
+p_lose_average: -0.7092, p_lose_min: -1.4766, p_lose_max: -0.1084, p_lose_std: 0.1779
+
+------------------------------------------------------------------------------------------
+epoch 2 step 60 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.7764, accuracy: 0.6699
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5098, prediction_2_rate: 0.4902
+true_1_rate: 0.6769, true_2_rate: 0.6627
+log joint likelihood: tensor(-567.2871093750) joint log likelihood: tensor(-3913.7187500000)
+r_win_average: -0.2871, r_win_min: -9.1875, r_win_max: 9.1875, r_win_std: 2.5820
+r_lose_average: -2.7019, r_lose_min: -13.7500, r_lose_max: 2.9844, r_lose_std: 2.5772
+eta_win_average: -0.4932, eta_win_min: -1.4141, eta_win_max: 0.4238, eta_win_std: 0.2527
+eta_lose_average: -0.4994, eta_lose_min: -1.6328, eta_lose_max: 0.5156, eta_lose_std: 0.2553
+p_win_average: -0.4749, p_win_min: -1.2578, p_win_max: 0.3594, p_win_std: 0.2332
+p_lose_average: -0.4688, p_lose_min: -1.5703, p_lose_max: 0.2373, p_lose_std: 0.2501
+
+------------------------------------------------------------------------------------------
+epoch 2 step 90 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.8088, accuracy: 0.6719
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5195, prediction_2_rate: 0.4805
+true_1_rate: 0.6885, true_2_rate: 0.6548
+log joint likelihood: tensor(-629.0500488281) joint log likelihood: tensor(-3594.7109375000)
+r_win_average: 1.1388, r_win_min: -9.1250, r_win_max: 12.2500, r_win_std: 3.0338
+r_lose_average: -1.5992, r_lose_min: -13.9375, r_lose_max: 4.9375, r_lose_std: 3.1106
+eta_win_average: 0.4027, eta_win_min: -0.4551, eta_win_max: 1.5703, eta_win_std: 0.1727
+eta_lose_average: 0.4455, eta_lose_min: -0.2080, eta_lose_max: 1.1328, eta_lose_std: 0.1651
+p_win_average: 0.7243, p_win_min: -0.3125, p_win_max: 1.3750, p_win_std: 0.2862
+p_lose_average: 0.6526, p_lose_min: -0.3262, p_lose_max: 1.4609, p_lose_std: 0.3019
+
+------------------------------------------------------------------------------------------
+epoch 2 step 120 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.6472, accuracy: 0.6738
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5059, prediction_2_rate: 0.4941
+true_1_rate: 0.6769, true_2_rate: 0.6706
+log joint likelihood: tensor(-768.2812500000) joint log likelihood: tensor(-2508.7695312500)
+r_win_average: -1.2516, r_win_min: -6.5625, r_win_max: 7.2500, r_win_std: 1.8244
+r_lose_average: -2.9314, r_lose_min: -8.6250, r_lose_max: 1.9766, r_lose_std: 1.7441
+eta_win_average: -1.4520, eta_win_min: -1.8359, eta_win_max: -0.1738, eta_win_std: 0.1862
+eta_lose_average: -1.4931, eta_lose_min: -1.9219, eta_lose_max: -0.6016, eta_lose_std: 0.1616
+p_win_average: 0.2740, p_win_min: -0.5312, p_win_max: 0.6914, p_win_std: 0.1432
+p_lose_average: 0.2358, p_lose_min: -0.5703, p_lose_max: 0.6367, p_lose_std: 0.1446
+
+------------------------------------------------------------------------------------------
+epoch 2 step 150 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.7939, accuracy: 0.6621
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.4980, prediction_2_rate: 0.5020
+true_1_rate: 0.6577, true_2_rate: 0.6667
+log joint likelihood: tensor(-651.9477539062) joint log likelihood: tensor(-3346.5898437500)
+r_win_average: 1.4096, r_win_min: -5.5000, r_win_max: 10.6250, r_win_std: 2.6002
+r_lose_average: -1.1631, r_lose_min: -9.6875, r_lose_max: 7.4688, r_lose_std: 2.7177
+eta_win_average: 1.2625, eta_win_min: 0.2949, eta_win_max: 2.1250, eta_win_std: 0.2108
+eta_lose_average: 1.2662, eta_lose_min: 0.0564, eta_lose_max: 2.0625, eta_lose_std: 0.2122
+p_win_average: -0.5759, p_win_min: -1.6328, p_win_max: 0.6836, p_win_std: 0.3124
+p_lose_average: -0.5979, p_lose_min: -1.5781, p_lose_max: 0.3887, p_lose_std: 0.2797
+
+------------------------------------------------------------------------------------------
+epoch 2 step 180 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.7246, accuracy: 0.6914
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5273, prediction_2_rate: 0.4727
+true_1_rate: 0.7154, true_2_rate: 0.6667
+log joint likelihood: tensor(-677.1196289062) joint log likelihood: tensor(-3002.9248046875)
+r_win_average: -0.3245, r_win_min: -9.0625, r_win_max: 6.6250, r_win_std: 2.5056
+r_lose_average: -2.8609, r_lose_min: -12.1250, r_lose_max: 3.4688, r_lose_std: 2.7952
+eta_win_average: -0.5838, eta_win_min: -1.0312, eta_win_max: 0.1543, eta_win_std: 0.1632
+eta_lose_average: -0.5973, eta_lose_min: -1.1250, eta_lose_max: -0.0544, eta_lose_std: 0.1634
+p_win_average: -0.1446, p_win_min: -0.6914, p_win_max: 0.6836, p_win_std: 0.1902
+p_lose_average: -0.1573, p_lose_min: -0.6680, p_lose_max: 0.4453, p_lose_std: 0.1712
+
+------------------------------------------------------------------------------------------
+epoch 2 step 210 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.7720, accuracy: 0.6562
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5156, prediction_2_rate: 0.4844
+true_1_rate: 0.6692, true_2_rate: 0.6429
+log joint likelihood: tensor(-728.8392333984) joint log likelihood: tensor(-2942.3574218750)
+r_win_average: 0.4396, r_win_min: -9.0000, r_win_max: 7.6875, r_win_std: 2.6643
+r_lose_average: -1.9229, r_lose_min: -10.5000, r_lose_max: 4.5938, r_lose_std: 3.0073
+eta_win_average: -0.1630, eta_win_min: -0.7344, eta_win_max: 0.3750, eta_win_std: 0.1342
+eta_lose_average: -0.1566, eta_lose_min: -0.6953, eta_lose_max: 0.3750, eta_lose_std: 0.1293
+p_win_average: 0.0426, p_win_min: -0.5352, p_win_max: 0.7422, p_win_std: 0.1416
+p_lose_average: 0.0319, p_lose_min: -0.4844, p_lose_max: 0.4980, p_lose_std: 0.1324
+
+------------------------------------------------------------------------------------------
+epoch 2 step 240 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.7271, accuracy: 0.6738
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5176, prediction_2_rate: 0.4824
+true_1_rate: 0.6885, true_2_rate: 0.6587
+log joint likelihood: tensor(-798.6367187500) joint log likelihood: tensor(-2834.9492187500)
+r_win_average: -0.9081, r_win_min: -9.1875, r_win_max: 5.8438, r_win_std: 1.9557
+r_lose_average: -2.8058, r_lose_min: -12.1875, r_lose_max: 2.7656, r_lose_std: 2.0808
+eta_win_average: -1.3206, eta_win_min: -2.2188, eta_win_max: -0.4414, eta_win_std: 0.1525
+eta_lose_average: -1.3544, eta_lose_min: -2.1719, eta_lose_max: -0.7969, eta_lose_std: 0.1497
+p_win_average: -1.0843, p_win_min: -2.5000, p_win_max: 0.1270, p_win_std: 0.2625
+p_lose_average: -1.1210, p_lose_min: -1.7656, p_lose_max: 0.0167, p_lose_std: 0.2311
+
+------------------------------------------------------------------------------------------
+epoch 2 step 270 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.7158, accuracy: 0.6758
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5078, prediction_2_rate: 0.4922
+true_1_rate: 0.6808, true_2_rate: 0.6706
+log joint likelihood: tensor(-807.4482421875) joint log likelihood: tensor(-2499.2832031250)
+r_win_average: 2.0843, r_win_min: -4.2500, r_win_max: 9.2500, r_win_std: 2.1336
+r_lose_average: -0.0600, r_lose_min: -8.2500, r_lose_max: 9.2500, r_lose_std: 2.1858
+eta_win_average: 0.1829, eta_win_min: -0.7539, eta_win_max: 0.7773, eta_win_std: 0.1522
+eta_lose_average: 0.1679, eta_lose_min: -0.9414, eta_lose_max: 0.8984, eta_lose_std: 0.1610
+p_win_average: 0.5548, p_win_min: -0.7852, p_win_max: 1.4844, p_win_std: 0.2585
+p_lose_average: 0.5134, p_lose_min: -1.2266, p_lose_max: 1.1172, p_lose_std: 0.2551
+
+------------------------------------------------------------------------------------------
+epoch 2 step 300 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.6777, accuracy: 0.6562
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5195, prediction_2_rate: 0.4805
+true_1_rate: 0.6731, true_2_rate: 0.6389
+log joint likelihood: tensor(-810.2529296875) joint log likelihood: tensor(-2407.9511718750)
+r_win_average: 2.6750, r_win_min: -2.6250, r_win_max: 9.5000, r_win_std: 2.0734
+r_lose_average: 0.8197, r_lose_min: -6.5312, r_lose_max: 9.2500, r_lose_std: 2.1003
+eta_win_average: 0.9533, eta_win_min: 0.3164, eta_win_max: 1.6719, eta_win_std: 0.1413
+eta_lose_average: 0.9803, eta_lose_min: -0.0425, eta_lose_max: 1.7891, eta_lose_std: 0.1556
+p_win_average: 0.3993, p_win_min: -1.2031, p_win_max: 1.0391, p_win_std: 0.2248
+p_lose_average: 0.3672, p_lose_min: -1.2031, p_lose_max: 1.3047, p_lose_std: 0.2307
+
+------------------------------------------------------------------------------------------
+epoch 2 evaluation
+eval_z_samples_size: 100
+eval_loss: 0.7715, accuracy: 0.6738
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5020, prediction_2_rate: 0.4980
+true_1_rate: 0.6731, true_2_rate: 0.6746
+log joint likelihood: tensor(-732.8867187500) joint log likelihood: tensor(-3029.9667968750)
+r_win_average: 4.2803, r_win_min: -3.6719, r_win_max: 14.3750, r_win_std: 2.7135
+r_lose_average: 1.7939, r_lose_min: -5.8750, r_lose_max: 10.8125, r_lose_std: 2.6036
+eta_win_average: 1.0581, eta_win_min: 0.0325, eta_win_max: 1.7578, eta_win_std: 0.2112
+eta_lose_average: 1.0766, eta_lose_min: -0.0796, eta_lose_max: 1.5234, eta_lose_std: 0.2003
+p_win_average: 1.1816, p_win_min: -0.2949, p_win_max: 2.0938, p_win_std: 0.3299
+p_lose_average: 1.1520, p_lose_min: -0.2734, p_lose_max: 2.2500, p_lose_std: 0.3117
+
+------------------------------------------------------------------------------------------
+epoch 2
+eval before training
+eval_z_samples_size: 100
+eval_loss: 0.7598, accuracy: 0.6836
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5078, prediction_2_rate: 0.4922
+true_1_rate: 0.6885, true_2_rate: 0.6786
+log joint likelihood: tensor(-740.0610351562) joint log likelihood: tensor(-2990.1074218750)
+r_win_average: 3.1597, r_win_min: -4.1562, r_win_max: 12.8750, r_win_std: 2.6883
+r_lose_average: 0.6911, r_lose_min: -6.3750, r_lose_max: 9.6875, r_lose_std: 2.5891
+eta_win_average: 1.4969, eta_win_min: 0.2891, eta_win_max: 1.8828, eta_win_std: 0.1833
+eta_lose_average: 1.5273, eta_lose_min: 0.5430, eta_lose_max: 2.0469, eta_lose_std: 0.1551
+p_win_average: -0.3808, p_win_min: -1.5703, p_win_max: 0.5117, p_win_std: 0.2510
+p_lose_average: -0.4001, p_lose_min: -1.0625, p_lose_max: 0.3848, p_lose_std: 0.2297
+
+------------------------------------------------------------------------------------------
+epoch 3 step 30 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.3003, accuracy: 0.6641
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5000, prediction_2_rate: 0.5000
+true_1_rate: 0.6615, true_2_rate: 0.6667
+log joint likelihood: tensor(-785.9743652344) joint log likelihood: tensor(-4628.2441406250)
+r_win_average: 2.1282, r_win_min: -11.1250, r_win_max: 16.2500, r_win_std: 5.2913
+r_lose_average: -3.0090, r_lose_min: -13.6250, r_lose_max: 12.6250, r_lose_std: 4.8599
+eta_win_average: -0.6712, eta_win_min: -2.0312, eta_win_max: 0.0554, eta_win_std: 0.2176
+eta_lose_average: -0.6566, eta_lose_min: -1.3984, eta_lose_max: 0.0835, eta_lose_std: 0.2127
+p_win_average: -0.0435, p_win_min: -1.9375, p_win_max: 0.7891, p_win_std: 0.3315
+p_lose_average: 0.0373, p_lose_min: -1.5938, p_lose_max: 0.9844, p_lose_std: 0.3309
+
+------------------------------------------------------------------------------------------
+epoch 3 step 60 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.4141, accuracy: 0.6387
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5098, prediction_2_rate: 0.4902
+true_1_rate: 0.6462, true_2_rate: 0.6310
+log joint likelihood: tensor(-786.0797729492) joint log likelihood: tensor(-4892.2377929688)
+r_win_average: 2.8791, r_win_min: -14.9375, r_win_max: 18.5000, r_win_std: 5.5072
+r_lose_average: -2.5935, r_lose_min: -15.6875, r_lose_max: 10.9375, r_lose_std: 5.6490
+eta_win_average: 0.3863, eta_win_min: -0.3047, eta_win_max: 1.3906, eta_win_std: 0.2471
+eta_lose_average: 0.4046, eta_lose_min: -0.2676, eta_lose_max: 1.6641, eta_lose_std: 0.2262
+p_win_average: -0.5350, p_win_min: -1.3750, p_win_max: 0.9102, p_win_std: 0.3665
+p_lose_average: -0.5008, p_lose_min: -1.3906, p_lose_max: 0.7500, p_lose_std: 0.3211
+
+------------------------------------------------------------------------------------------
+epoch 3 step 90 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.1987, accuracy: 0.6719
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5234, prediction_2_rate: 0.4766
+true_1_rate: 0.6923, true_2_rate: 0.6508
+log joint likelihood: tensor(-798.7764892578) joint log likelihood: tensor(-4354.6000976562)
+r_win_average: -1.3723, r_win_min: -16.1250, r_win_max: 16.5000, r_win_std: 5.0068
+r_lose_average: -6.0258, r_lose_min: -17.7500, r_lose_max: 7.0625, r_lose_std: 4.8026
+eta_win_average: 0.4217, eta_win_min: -0.9375, eta_win_max: 1.1016, eta_win_std: 0.3266
+eta_lose_average: 0.4202, eta_lose_min: -0.9375, eta_lose_max: 1.1797, eta_lose_std: 0.3012
+p_win_average: -0.6493, p_win_min: -1.5234, p_win_max: 0.4434, p_win_std: 0.3469
+p_lose_average: -0.6269, p_lose_min: -1.5547, p_lose_max: 0.2217, p_lose_std: 0.3151
+
+------------------------------------------------------------------------------------------
+epoch 3 step 120 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.1558, accuracy: 0.6660
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5176, prediction_2_rate: 0.4824
+true_1_rate: 0.6808, true_2_rate: 0.6508
+log joint likelihood: tensor(-779.3503417969) joint log likelihood: tensor(-4198.3906250000)
+r_win_average: -0.4004, r_win_min: -14.8750, r_win_max: 19.1250, r_win_std: 4.6880
+r_lose_average: -4.7870, r_lose_min: -18.2500, r_lose_max: 7.7812, r_lose_std: 4.7210
+eta_win_average: -0.9307, eta_win_min: -1.7344, eta_win_max: 0.9922, eta_win_std: 0.4248
+eta_lose_average: -0.9814, eta_lose_min: -1.7969, eta_lose_max: 0.9805, eta_lose_std: 0.3685
+p_win_average: 0.8128, p_win_min: -0.1123, p_win_max: 1.9609, p_win_std: 0.3218
+p_lose_average: 0.7567, p_lose_min: -0.3203, p_lose_max: 1.7812, p_lose_std: 0.3024
+
+------------------------------------------------------------------------------------------
+epoch 3 step 150 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.3857, accuracy: 0.6641
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5039, prediction_2_rate: 0.4961
+true_1_rate: 0.6654, true_2_rate: 0.6627
+log joint likelihood: tensor(-903.9780883789) joint log likelihood: tensor(-4651.4541015625)
+r_win_average: 3.8926, r_win_min: -11.8125, r_win_max: 15.5000, r_win_std: 5.1758
+r_lose_average: -1.1978, r_lose_min: -17.6250, r_lose_max: 10.9375, r_lose_std: 5.6266
+eta_win_average: 0.7389, eta_win_min: -1.2188, eta_win_max: 1.4766, eta_win_std: 0.3054
+eta_lose_average: 0.7293, eta_lose_min: -1.0703, eta_lose_max: 1.3281, eta_lose_std: 0.2956
+p_win_average: 0.0747, p_win_min: -0.9766, p_win_max: 1.2031, p_win_std: 0.2579
+p_lose_average: 0.0939, p_lose_min: -0.9766, p_lose_max: 1.3047, p_lose_std: 0.2509
+
+------------------------------------------------------------------------------------------
+epoch 3 step 180 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.1479, accuracy: 0.6914
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5195, prediction_2_rate: 0.4805
+true_1_rate: 0.7077, true_2_rate: 0.6746
+log joint likelihood: tensor(-891.2320556641) joint log likelihood: tensor(-3869.2529296875)
+r_win_average: -0.6413, r_win_min: -15.0000, r_win_max: 14.8125, r_win_std: 4.7176
+r_lose_average: -5.0838, r_lose_min: -19.0000, r_lose_max: 6.1875, r_lose_std: 4.8246
+eta_win_average: 0.1161, eta_win_min: -0.9062, eta_win_max: 0.5547, eta_win_std: 0.1591
+eta_lose_average: 0.1169, eta_lose_min: -0.5156, eta_lose_max: 0.5547, eta_lose_std: 0.1380
+p_win_average: -0.3984, p_win_min: -1.0859, p_win_max: 0.8320, p_win_std: 0.2400
+p_lose_average: -0.4093, p_lose_min: -1.0859, p_lose_max: 0.5859, p_lose_std: 0.2038
+
+------------------------------------------------------------------------------------------
+epoch 3 step 210 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.2534, accuracy: 0.6641
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.4922, prediction_2_rate: 0.5078
+true_1_rate: 0.6538, true_2_rate: 0.6746
+log joint likelihood: tensor(-934.8750000000) joint log likelihood: tensor(-4041.8508300781)
+r_win_average: 0.6308, r_win_min: -17.2500, r_win_max: 15.0625, r_win_std: 5.1925
+r_lose_average: -4.3082, r_lose_min: -21.3750, r_lose_max: 6.7188, r_lose_std: 5.6188
+eta_win_average: 1.1968, eta_win_min: -0.3652, eta_win_max: 1.8516, eta_win_std: 0.2511
+eta_lose_average: 1.1987, eta_lose_min: 0.0430, eta_lose_max: 1.7656, eta_lose_std: 0.2000
+p_win_average: -0.6576, p_win_min: -1.8125, p_win_max: 0.1211, p_win_std: 0.2647
+p_lose_average: -0.6426, p_lose_min: -1.9297, p_lose_max: -0.0581, p_lose_std: 0.2503
+
+------------------------------------------------------------------------------------------
+epoch 3 step 240 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.1416, accuracy: 0.6387
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.4980, prediction_2_rate: 0.5020
+true_1_rate: 0.6346, true_2_rate: 0.6429
+log joint likelihood: tensor(-976.1028442383) joint log likelihood: tensor(-3674.1782226562)
+r_win_average: 1.9337, r_win_min: -15.3750, r_win_max: 11.9375, r_win_std: 4.5946
+r_lose_average: -2.5601, r_lose_min: -16.7500, r_lose_max: 8.9375, r_lose_std: 5.1104
+eta_win_average: 0.0246, eta_win_min: -0.5391, eta_win_max: 0.6250, eta_win_std: 0.1548
+eta_lose_average: -0.0021, eta_lose_min: -0.6758, eta_lose_max: 0.7734, eta_lose_std: 0.1495
+p_win_average: -0.1114, p_win_min: -1.0469, p_win_max: 0.8867, p_win_std: 0.2578
+p_lose_average: -0.0747, p_lose_min: -0.8945, p_lose_max: 0.8867, p_lose_std: 0.2360
+
+------------------------------------------------------------------------------------------
+epoch 3 step 270 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.2832, accuracy: 0.6426
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5254, prediction_2_rate: 0.4746
+true_1_rate: 0.6654, true_2_rate: 0.6190
+log joint likelihood: tensor(-991.8459472656) joint log likelihood: tensor(-4118.4140625000)
+r_win_average: 3.9072, r_win_min: -11.1875, r_win_max: 16.8750, r_win_std: 4.7654
+r_lose_average: -0.7953, r_lose_min: -15.3125, r_lose_max: 12.8125, r_lose_std: 5.5148
+eta_win_average: 1.3809, eta_win_min: 0.3926, eta_win_max: 1.8828, eta_win_std: 0.1824
+eta_lose_average: 1.3527, eta_lose_min: 0.3926, eta_lose_max: 1.8672, eta_lose_std: 0.1788
+p_win_average: -0.1937, p_win_min: -1.0781, p_win_max: 0.6250, p_win_std: 0.2671
+p_lose_average: -0.1321, p_lose_min: -1.4766, p_lose_max: 0.8242, p_lose_std: 0.2850
+
+------------------------------------------------------------------------------------------
+epoch 3 step 300 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.0430, accuracy: 0.6758
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5078, prediction_2_rate: 0.4922
+true_1_rate: 0.6808, true_2_rate: 0.6706
+log joint likelihood: tensor(-946.0969238281) joint log likelihood: tensor(-3439.7163085938)
+r_win_average: -0.4532, r_win_min: -14.5625, r_win_max: 11.8750, r_win_std: 4.4759
+r_lose_average: -4.6530, r_lose_min: -17.7500, r_lose_max: 8.3125, r_lose_std: 4.7533
+eta_win_average: -0.7670, eta_win_min: -1.2031, eta_win_max: 0.0579, eta_win_std: 0.1804
+eta_lose_average: -0.8268, eta_lose_min: -1.2969, eta_lose_max: 0.0474, eta_lose_std: 0.1602
+p_win_average: -0.1380, p_win_min: -0.9688, p_win_max: 1.3281, p_win_std: 0.3228
+p_lose_average: -0.0828, p_lose_min: -0.7461, p_lose_max: 1.3281, p_lose_std: 0.2967
+
+------------------------------------------------------------------------------------------
+epoch 3 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.2998, accuracy: 0.6562
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5117, prediction_2_rate: 0.4883
+true_1_rate: 0.6654, true_2_rate: 0.6468
+log joint likelihood: tensor(-955.5441284180) joint log likelihood: tensor(-4231.5644531250)
+r_win_average: 2.8499, r_win_min: -13.5000, r_win_max: 14.1250, r_win_std: 5.0471
+r_lose_average: -2.1120, r_lose_min: -18.1250, r_lose_max: 12.8750, r_lose_std: 5.5818
+eta_win_average: 0.0046, eta_win_min: -0.6953, eta_win_max: 0.6641, eta_win_std: 0.1524
+eta_lose_average: 0.0315, eta_lose_min: -0.4102, eta_lose_max: 0.5977, eta_lose_std: 0.1456
+p_win_average: 0.7275, p_win_min: -0.3398, p_win_max: 1.6875, p_win_std: 0.3368
+p_lose_average: 0.6396, p_lose_min: -0.6094, p_lose_max: 2.0000, p_lose_std: 0.3398
+
+------------------------------------------------------------------------------------------
+epoch 3
+eval before training
+eval_z_samples_size: 100
+eval_loss: 1.3091, accuracy: 0.6504
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5137, prediction_2_rate: 0.4863
+true_1_rate: 0.6615, true_2_rate: 0.6389
+log joint likelihood: tensor(-901.2014770508) joint log likelihood: tensor(-4239.0976562500)
+r_win_average: 2.9668, r_win_min: -13.3750, r_win_max: 13.6250, r_win_std: 4.9554
+r_lose_average: -1.9660, r_lose_min: -18.0000, r_lose_max: 12.7500, r_lose_std: 5.5119
+eta_win_average: 1.1394, eta_win_min: -0.0410, eta_win_max: 1.8203, eta_win_std: 0.2289
+eta_lose_average: 1.1039, eta_lose_min: 0.2520, eta_lose_max: 1.6641, eta_lose_std: 0.2276
+p_win_average: -0.2862, p_win_min: -1.7500, p_win_max: 0.4121, p_win_std: 0.3243
+p_lose_average: -0.2905, p_lose_min: -1.7500, p_lose_max: 0.4902, p_lose_std: 0.3597
+
+------------------------------------------------------------------------------------------
+epoch 4 step 30 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.4458, accuracy: 0.6875
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5039, prediction_2_rate: 0.4961
+true_1_rate: 0.6885, true_2_rate: 0.6865
+log joint likelihood: tensor(-1011.2046508789) joint log likelihood: tensor(-4679.9248046875)
+r_win_average: 1.4158, r_win_min: -21.5000, r_win_max: 16.2500, r_win_std: 6.3699
+r_lose_average: -4.8198, r_lose_min: -24.1250, r_lose_max: 13.7500, r_lose_std: 6.9580
+eta_win_average: 0.3558, eta_win_min: -0.3145, eta_win_max: 0.8789, eta_win_std: 0.1734
+eta_lose_average: 0.3679, eta_lose_min: -0.2930, eta_lose_max: 0.8828, eta_lose_std: 0.1656
+p_win_average: -0.4750, p_win_min: -1.8594, p_win_max: 1.0156, p_win_std: 0.4218
+p_lose_average: -0.3865, p_lose_min: -1.4531, p_lose_max: 1.0156, p_lose_std: 0.4129
+
+------------------------------------------------------------------------------------------
+epoch 4 step 60 evaluation
+eval_z_samples_size: 100
+eval_loss: 1.5693, accuracy: 0.6992
+label_1_rate: 0.5078, label_2_rate: 0.4922, prediction_1_rate: 0.5078, prediction_2_rate: 0.4922
+true_1_rate: 0.7038, true_2_rate: 0.6944
+log joint likelihood: tensor(-1050.0803222656) joint log likelihood: tensor(-4969.8549804688)
+r_win_average: 2.9334, r_win_min: -20.7500, r_win_max: 18.6250, r_win_std: 7.0799
+r_lose_average: -4.0451, r_lose_min: -24.0000, r_lose_max: 16.0000, r_lose_std: 7.5759
+eta_win_average: 0.5127, eta_win_min: -0.7656, eta_win_max: 1.1016, eta_win_std: 0.2559
+eta_lose_average: 0.5238, eta_lose_min: -0.7656, eta_lose_max: 0.9922, eta_lose_std: 0.2391
+p_win_average: 0.2974, p_win_min: -0.2832, p_win_max: 1.2812, p_win_std: 0.2684
+p_lose_average: 0.2940, p_lose_min: -0.5781, p_lose_max: 1.4844, p_lose_std: 0.2628
+
+------------------------------------------------------------------------------------------
+{'seed': 42, 'user': 'leon', 'project': 'reward-enn', 'wandb_project': 'hh_long', 'backbone_model': '/shared/share_mala/leon/llama-3b-sft-hh', 'dataset_name': 'anthropic_hh', 'ref_size': 30, 'num_ref_train': 100, 'eval_z_size_list': '100', 'hidden_size': 64, 'output_size': 1, 'enn_gain': 1.0, 'lmbda': 1.0, 'reward_gain': 1, 'reward_lr': 0.0001, 'reward_decay': 0.95, 'lr': 1e-05, 'enn_lr': 0.0001, 'enn_decay': 0.95, 'num_epochs': 30, 'warmup_ratio': 0.03, 'gradient_acc': 1, 'weight_decay': 0.01, 'train_batch_size': 4, 'eval_batch_size': 64, 'eval_steps': 30, 'max_length': 512, 'flash_attn': False, 'bf16': True, 'fp16': False}

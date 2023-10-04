@@ -1,0 +1,22 @@
+{
+    "user": "leon",
+    "project": "vanilla-reward",
+    "wandb_project": "cooking",
+    "seed": 42,
+    "backbone_model": "/shared/share_mala/leon/llama-3b-sft-cooking",
+    "lr": 1e-5,
+    "num_epochs": 1,
+    "reward_gain" : 1,
+    "train_batch_size": 4,
+    "eval_batch_size": 4,
+    "eval_steps": 50,
+    "warmup_ratio": 0.03,
+    "gradient_acc": 1,
+    "weight_decay": 0.01,
+    "max_length": 512,
+    "dataset_name": "se_cooking_preference",
+    "flash_attn": false,
+    "bf16": true,
+    "fp16": false
+}
+

@@ -1,0 +1,74 @@
+[
+    [
+        {
+            "input": "N/A",
+            "instruction": "Which species is the largest bird alive today?",
+            "output_1": "Today, the ostrich stands as the largest bird extant, with the ability to reach nearly 11 feet (335 cm) in height and attain a weight up to 285 lbs (130 kg).",
+            "output_2": "The contenders for the title of the largest bird living today are the common ostrich (Sylvia ostrich) or the elephant bird from Madagascar (Genus Aepyornis), which is extinct.",
+            "preference": 1
+        },
+        {
+            "input": "N/A",
+            "instruction": "Which species is the largest bird alive today?",
+            "output_1": "Identified as the largest alive bird at present, the ostrich can extend up to nearly 11 feet (335 cm) tall and weigh a maximum of 285 lbs (130 kg).",
+            "output_2": "The largest bird today could potentially be the common ostrich (Sylvia ostrich) or the extinct elephant bird from Madagascar (Genus Aepyornis).",
+            "preference": 1
+        },
+        {
+            "input": "",
+            "instruction": "Come up with a 3-step recipe to roast vegetables.",
+            "output_1": "Heat the oven to 400\u00b0F in anticipation.\n2. Minutely chop up the veggies and lay them out on a baking tray. \n3. Douse with extra virgin olive oil, sprinkle salt and pepper, and mix to ensure even coverage. \n4. Let it roast for around 20 minutes, making sure to give it a stir midway.\n5. Serve hot and enhance the taste with your preferred sauce or dressing.",
+            "output_2": "Establish the procedure by warming the oven to 440\u00b0F (220\u00b0C).\n2. Wash the greens and dice them.\n3. Disperse the veggies in a uniform layer onto a hot tray.\n4. Drench with oil and furnish with both salt and pepper.\n5. Leave it to cook in the preheated oven until it gets golden brown and is cooked through, this might take about 20-25 minutes.\n6. Mix in freshly cut herbs prior to serving.",
+            "preference": 1
+        },
+        {
+            "input": "N/A",
+            "instruction": "Which species is the largest bird alive today?",
+            "output_1": "Today, the ostrich stands as the largest bird extant, with the ability to reach nearly 11 feet (335 cm) in height and attain a weight up to 285 lbs (130 kg).",
+            "output_2": "The common ostrich (Sylvia ostrich), or the elephant bird (Genus Aepyornis) of Madagascar, which is now extinct, could claim the tag of the largest bird today.",
+            "preference": 1
+        },
+        {
+            "input": "N/A",
+            "instruction": "Which species is the largest bird alive today?",
+            "output_1": "Identified as the largest alive bird at present, the ostrich can extend up to nearly 11 feet (335 cm) tall and weigh a maximum of 285 lbs (130 kg).",
+            "output_2": "The common ostrich (Sylvia ostrich), or the elephant bird (Genus Aepyornis) of Madagascar, which is now extinct, could claim the tag of the largest bird today.",
+            "preference": 1
+        },
+        {
+            "input": "N/A",
+            "instruction": "Which species is the largest bird alive today?",
+            "output_1": "Currently, the ostrich claims the title of biggest bird alive, with a potential height of almost 11 feet (335 cm) and a weight of up to 285 lbs (130 kg).",
+            "output_2": "The largest bird today could potentially be the common ostrich (Sylvia ostrich) or the extinct elephant bird from Madagascar (Genus Aepyornis).",
+            "preference": 1
+        },
+        {
+            "input": "N/A",
+            "instruction": "Which species is the largest bird alive today?",
+            "output_1": "The ostrich, with an achievable height of roughly 11 feet (335 cm) and a feasible weight of 285 lbs (130 kg), ranks as the largest bird living today.",
+            "output_2": "Today, either the common ostrich (Sylvia ostrich) or the no longer existing elephant bird of Madagascar (Genus Aepyornis) could be the largest bird.",
+            "preference": 1
+        },
+        {
+            "input": "N/A",
+            "instruction": "Which species is the largest bird alive today?",
+            "output_1": "The ostrich, which has the capacity to grow up to a striking 11 feet (335 cm) tall and weight that can reach 285 lbs (130 kg), is recognized as the largest living bird today.",
+            "output_2": "Either the common ostrich (Sylvia ostrich) or the now extinct Madagascar elephant bird (Genus Aepyornis) could be identified as the largest bird currently.",
+            "preference": 1
+        },
+        {
+            "input": "",
+            "instruction": "Come up with a 3-step recipe to roast vegetables.",
+            "output_1": "Primarily, heat the oven up to 400\u00b0F.\n2. Break down the veggies into small cuboids and spread across the ovenware.\n3. Soak with olive oil, season with salt and pepper, making sure to mix for an evenly dispersal.\n4. Leave it to roast for a total of 20 minutes, steering midway through.\n5. Serve immediately while it's still warm, enhanced by your preferred dressing or dip.",
+            "output_2": "Initially, get the oven heated to 440\u00b0F (220\u00b0C).\n2. Apply water to the veggies and chop them into dice-sized pieces.\n3. Scatter these diced veggies in a solitary layer on a baking tray.\n4. Rain the veggies with oil and equip it with salt and pepper.\n5. Bake until golden brown for approximately 20-25 minutes.\n6. Tumble over fresh herbs and tuck in.",
+            "preference": 1
+        },
+        {
+            "input": "N/A",
+            "instruction": "Which species is the largest bird alive today?",
+            "output_1": "Today, the ostrich is acknowledged as the largest living bird, capable of growing up to an impressive 11 feet (335 cm) tall and weighing as much as 285 lbs (130 kg).",
+            "output_2": "Presently, the largest bird may either be the common ostrich (Sylvia ostrich) or be the extinct elephant bird of Madagascar (Genus Aepyornis).",
+            "preference": 1
+        }
+    ]
+]

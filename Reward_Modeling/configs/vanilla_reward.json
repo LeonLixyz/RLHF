@@ -1,0 +1,24 @@
+{
+    "user": "leon",
+    "project": "vanilla-reward",
+    "wandb_project": "hh",
+    "seed": 42,
+    "backbone_model": "/shared/share_mala/leon/llama-3b-sft-hh",
+    "lr": 1e-5,
+    "reward_lr": 3e-4,
+    "num_epochs": 1,
+    "reward_gain" : 1,
+    "train_batch_size": 4,
+    "eval_batch_size": 64,
+    "eval_steps": 30,
+    "warmup_ratio": 0.03,
+    "gradient_acc": 1,
+    "weight_decay": 0.01,
+    "reward_decay": 0.95,
+    "max_length": 512,
+    "dataset_name": "anthropic_hh",
+    "flash_attn": false,
+    "bf16": true,
+    "fp16": false
+}
+

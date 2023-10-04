@@ -1,0 +1,4 @@
+{
+    "prompt_noinputs": "Below is a query related to cooking. Write a response that appropriately answers the query.\n\n### Instruction:\n{instruction}\n\n### Response:",
+    "prompt_inputs": "Below is a query related to cooking. Write a response that appropriately answers the query.\n\n### Query:\n{input}\n\n### Response:"
+}

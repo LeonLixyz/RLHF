@@ -1,0 +1,3 @@
+{
+    "prompt_inputs": "Based on the IMDb movie review provided, determine its sentiment. Please classify the review as either 'positive' or 'negative'.\n\n### Review:\n{input}\n\n### Sentiment:"
+}
